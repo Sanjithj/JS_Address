@@ -103,5 +103,23 @@ public class Contacts {
         else
             throw "EMAIL ADDRESS is Incorrect ";
     }
+
+//let person1 = new Contact("Sanjith","Vallag","Arsikere","Hassan","Karn",464657,9155459154,"sanjith@gmail.com")
+//console.log(person1.Address);
+//checkValidationForName(person1.FirstName)
+
+let addressBookArray = new Array();
+
+try{
+ addressBookArray.push(new Contact("Sanjith","Vallag","Arsikere","Hassan","Karn",464657,9155459154,"sanjith@gmail.com"));
+catch(e){
+ console.log(e);
 }
+try{
+ addressBookArray.push(new Contact("Sagar","Rajkumar","Banavara","Kadur","Tamilnadu",546543,9544534354,"sagar@gmail.com"));
+}
+catch(e){
+ console.log(e);
+}
+console.log(addressBookArray);
 }
